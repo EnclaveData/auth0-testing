@@ -1,3 +1,12 @@
+
+# auth0-testing
+
+Making a feature complete, fully tested, rock solid React stub for login/logout/user profile/password reset/etc.
+
+[Documentation](./docs/introduction.md)
+
+## Original Readme.md
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
