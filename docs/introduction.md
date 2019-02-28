@@ -7,6 +7,7 @@ DONE
 * attempt to merge in 01-Login from auth0 repo
   * convert react-bootstrap to reactstrap along the way
 * bring in user profile aspect from 02-User-Profile
+* replace GlyphIcon with react-icons 
 
 TODO
 * along the way attempt to use update to date es6/9 syntax
