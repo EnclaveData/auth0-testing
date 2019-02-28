@@ -6,10 +6,10 @@ DONE
 * add eslint and jshint configuration
 * attempt to merge in 01-Login from auth0 repo
   * convert react-bootstrap to reactstrap along the way
+* bring in user profile aspect from 02-User-Profile
 
 TODO
 * along the way attempt to use update to date es6/9 syntax
 * switch Home to Dashboard
-* bring in user profile aspect from 02-User-Profile
 
 
