@@ -30,6 +30,11 @@ class App extends Component {
           }
           {
             isAuthenticated() && (
+              <Button color='secondary' onClick={this.goTo.bind(this, 'profile')} >Profile</Button>
+            )
+          }
+          {
+            isAuthenticated() && (
               <Button color='primary' onClick={this.logout.bind(this)} >Logout</Button>
             )
           }
