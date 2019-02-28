@@ -1,13 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 class Home extends Component {
-  login() {
-    this.props.auth.login();
+  login () {
+    this.props.auth.login()
   }
-  render() {
-    const { isAuthenticated } = this.props.auth;
+
+  render () {
+    const { isAuthenticated } = this.props.auth
     return (
-      <div className="container">
+      <div className='container'>
         {
           isAuthenticated() && (
             <h4>
@@ -31,8 +32,8 @@ class Home extends Component {
           )
         }
       </div>
-    );
+    )
   }
 }
 
-export default Home;
+export default Home
