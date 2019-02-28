@@ -1,25 +1,17 @@
-import React, { Component } from 'react';
-import { Button } from 'reactstrap';
-import './App.css';
+import React, { Component } from 'react'
+import { Button } from 'reactstrap'
+import './App.css'
 
 class App extends Component {
-  render() {
+  render () {
     return (
-      <div className="App">
-        <header className="App-header">
-          <Button color="primary">Login</Button>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+      <div className='App'>
+        <header className='App-header'>
+          <Button color='primary'>Login</Button>
         </header>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
