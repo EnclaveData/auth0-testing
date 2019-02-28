@@ -5,7 +5,7 @@ Making a feature complete, fully tested, rock solid React stub for login/logout/
 
 [Documentation](./docs/introduction.md)
 
-## Original Readme.md
+## Original Create React App README
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
