@@ -10,6 +10,6 @@ DONE
 TODO
 * along the way attempt to use update to date es6/9 syntax
 * switch Home to Dashboard
-* bring in user profile aspect 
+* bring in user profile aspect from 02-User-Profile
 
 
