@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom'
 import './index.css'
-import 'bootstrap/diet/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import * as serviceWorker from './serviceWorker'
 import { createMainRoutes } from './routes'
 
