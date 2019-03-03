@@ -22,7 +22,7 @@ class App extends Component {
       <div className='App'>
         <Navbar>
           <NavbarBrand href='/'>Auth0 Stub</NavbarBrand>
-          <Button color='primary' onClick={this.goTo.bind(this, 'home')}>Home</Button>
+          <Button color='primary' onClick={this.goTo.bind(this, 'dashboard')}>Dashboard</Button>
           {
             !isAuthenticated() && (
               <Button color='primary' onClick={this.login.bind(this)} >Login</Button>

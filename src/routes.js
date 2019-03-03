@@ -1,7 +1,7 @@
 import React from 'react'
 import { Redirect, Route, Router } from 'react-router-dom'
 import App from './App'
-import Home from './Home'
+import Dashboard from './Dashboard'
 import Profile from './Profile'
 import Callback from './Callback'
 import Auth from './Auth'
@@ -20,7 +20,7 @@ export const createMainRoutes = () => {
     <Router history={history}>
       <div>
         <Route path='/' render={(props) => <App auth={auth} {...props} />} />
-        <Route path='/home' render={(props) => <Home auth={auth} {...props} />} />
+        <Route path='/dashboard' render={(props) => <Dashboard auth={auth} {...props} />} />
         <Route path="/profile" render={(props) => (
           !auth.isAuthenticated() ? (
             <Redirect to="/home"/>
