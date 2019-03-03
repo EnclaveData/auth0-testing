@@ -8,9 +8,10 @@ DONE
   * convert react-bootstrap to reactstrap along the way
 * bring in user profile aspect from 02-User-Profile
 * replace GlyphIcon with react-icons 
+* switch Home to Dashboard
 
 TODO
 * along the way attempt to use update to date es6/9 syntax
-* switch Home to Dashboard
+* bring in components from antd design
 
 
