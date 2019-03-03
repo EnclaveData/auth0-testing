@@ -28,7 +28,8 @@ class Profile extends Component {
               <img src={profile.picture} alt="profile" />
               <div>
                 <Form><Label><FaUser /> Nickname</Label></Form>
-                <h3>{profile.nickname}</h3>
+                <h3>Nickname : {profile.nickname}</h3>
+                <h3>Name: {profile.name}</h3>
               </div>
               <pre>{JSON.stringify(profile, null, 2)}</pre>
             </CardBody>
