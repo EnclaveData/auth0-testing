@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
-import { Button, Navbar, NavbarBrand } from 'reactstrap'
+import { Button, Jumbotron, Navbar, NavbarBrand } from 'reactstrap'
 import './App.css'
+
+import TitleLogo from './TitleLogo'
 
 class App extends Component {
   goTo (route) {
@@ -21,24 +23,31 @@ class App extends Component {
     return (
       <div className='App'>
         <Navbar>
-          <NavbarBrand href='/'>Auth0 Stub</NavbarBrand>
-          <Button color='primary' onClick={this.goTo.bind(this, 'dashboard')}>Dashboard</Button>
+          <NavbarBrand href='/'><TitleLogo /></NavbarBrand>
+          {
+            isAuthenticated() && (
+							<div>
+                <Button color='primary' onClick={this.goTo.bind(this, 'dashboard')}>Dashboard</Button>
+                <Button color='secondary' onClick={this.goTo.bind(this, 'profile')} >Profile</Button>
+                <Button color='secondary' onClick={this.logout.bind(this)} >Logout</Button>
+							</div>
+            )
+          }
           {
             !isAuthenticated() && (
               <Button color='primary' onClick={this.login.bind(this)} >Login</Button>
             )
           }
-          {
-            isAuthenticated() && (
-              <Button color='secondary' onClick={this.goTo.bind(this, 'profile')} >Profile</Button>
-            )
-          }
-          {
-            isAuthenticated() && (
-              <Button color='primary' onClick={this.logout.bind(this)} >Logout</Button>
-            )
-          }
         </Navbar>
+        {
+          isAuthenticated() && (
+				    <div>
+				      <Jumbotron>
+				        <h3>Application</h3>
+				       </Jumbotron>
+				    </div>
+					)
+				}
       </div>
     )
   }
